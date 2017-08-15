@@ -96,3 +96,6 @@ ONBUILD COPY download-shopware.sh /swtools/download-shopware.sh
 ONBUILD RUN chmod a+x /swtools/*
 ONBUILD RUN /swtools/download-shopware.sh
 ONBUILD RUN /swtools/unzip-shopware.sh
+
+LABEL maintainer="docker@felliweb.de"
+
