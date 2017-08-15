@@ -1,11 +1,13 @@
 FROM dnhsoft/php:7.0-apache
 
 RUN apt-get update && apt-get install -y \
+        apt-utils \
+    && apt-get install -y \
         wget \
         zip \
         unzip \
         mysql-client \
-	libfreetype6-dev \
+        libfreetype6-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
         libpng12-dev \
