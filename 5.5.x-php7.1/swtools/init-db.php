@@ -11,9 +11,7 @@ $mysql_conn = "mysql -u$SWDB_USER -p$SWDB_PASS -h$SWDB_HOST -P$SWDB_PORT ";
 
 
 // Create database
-echo shell_exec(
-    "$mysql_conn -e 'CREATE DATABASE IF NOT EXISTS \"$SWDB_DATABASE\" CHARACTER SET utf8 COLLATE utf8_general_ci'"
-);
+echo shell_exec("$mysql_conn -e 'CREATE DATABASE IF NOT EXISTS \"$SWDB_DATABASE\" CHARACTER SET utf8 COLLATE utf8_general_ci'");
 
 
 include '/swtools/sql-data.php';
